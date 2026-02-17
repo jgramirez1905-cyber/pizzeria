@@ -1,13 +1,12 @@
 using System;
 
 namespace MiPrimeraApp 
-{
-    internal class NewBaseType : NewBaseType
+{    internal class NewBaseType : System.Object
     {
         class Program : NewBaseType
     {
         class BellaNapoli
-{
+        {
     static void Main(string[] args)
     {
         // ==========================================
@@ -137,12 +136,14 @@ namespace MiPrimeraApp
         Console.WriteLine();
         Console.WriteLine("✅ ¡Gracias por ordenar en Bella Napoli!");
         Console.WriteLine("Tu pizza está en preparación... 🍕🔥");
-    }
+        }   
+    }   
 }
 
 
 
         }
-    }
-}
+        
+}   
+
     
