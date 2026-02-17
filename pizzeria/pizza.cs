@@ -2,14 +2,6 @@ using System;
 
 namespace MiPrimeraApp 
 {
-    internal class NewBaseType
-    {
-        static void Main(string[] args)
-        {
-            
-        }
-    }
-
     internal class NewBaseType : NewBaseType
     {
         class Program : NewBaseType
