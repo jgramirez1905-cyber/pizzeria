@@ -1,5 +1,0 @@
-C:\Users\Iglesia LV\Documents\css\obj\Debug\net10.0\css.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\Iglesia LV\Documents\css\obj\Debug\net10.0\css.AssemblyInfoInputs.cache
-C:\Users\Iglesia LV\Documents\css\obj\Debug\net10.0\css.AssemblyInfo.cs
-C:\Users\Iglesia LV\Documents\css\obj\Debug\net10.0\css.csproj.CoreCompileInputs.cache
-C:\Users\Iglesia LV\Documents\css\obj\Debug\net10.0\css.sourcelink.json
