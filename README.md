@@ -1,8 +1,6 @@
-# hello
-
-### i love pt
-
-**by jeremy**
+# esta es mi practica
+#
+#
 using System;
 using System.Globalization;
 using System.Text;
