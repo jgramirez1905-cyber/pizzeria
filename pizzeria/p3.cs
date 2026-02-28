@@ -1,6 +1,3 @@
-# esta es mi practica
-#
-#
 using System;
 using System.Collections.Generic;
 
