@@ -1,4 +1,4 @@
-using System;
+/*using System;
 using System.Globalization;
 using System.Text;
 
@@ -30,3 +30,4 @@ class Progr
         Console.WriteLine("esto aprendi en unos videos que eh visto hace un año en mi antiguo curso");
     }
 }
+*/

@@ -91,7 +91,7 @@ partial class Program
             }
 
             Console.Write("Nombre del producto: ");
-            string nombre = Console.ReadLine();
+            string nombre = Console.ReadLine() ??"";
 
             Console.Write("Precio: ");
             double precio;
