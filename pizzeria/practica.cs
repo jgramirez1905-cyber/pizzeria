@@ -2,7 +2,7 @@ using System;
 using System.Globalization;
 using System.Text;
 
-class Program
+class Progra
 {
     static void Main()
     {

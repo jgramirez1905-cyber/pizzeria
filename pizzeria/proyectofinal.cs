@@ -1,6 +1,6 @@
 using System;
 
-class Program
+partial class Pogram
 {
         // Capacidad máxima del inventario
     const int MAX = 100;
@@ -12,7 +12,7 @@ class Program
 
     static int cantidadProductos = 0;
 
-    static void Main()
+    static void Mai()
     {
         int opcion = 0;
 

@@ -1,0 +1,15 @@
+/workspaces/pizzeria/obj/Debug/net10.0/pizzeria.GeneratedMSBuildEditorConfig.editorconfig
+/workspaces/pizzeria/obj/Debug/net10.0/pizzeria.AssemblyInfoInputs.cache
+/workspaces/pizzeria/obj/Debug/net10.0/pizzeria.AssemblyInfo.cs
+/workspaces/pizzeria/obj/Debug/net10.0/pizzeria.csproj.CoreCompileInputs.cache
+/workspaces/pizzeria/obj/Debug/net10.0/pizzeria.sourcelink.json
+/workspaces/pizzeria/bin/Debug/net10.0/pizzeria
+/workspaces/pizzeria/bin/Debug/net10.0/pizzeria.deps.json
+/workspaces/pizzeria/bin/Debug/net10.0/pizzeria.runtimeconfig.json
+/workspaces/pizzeria/bin/Debug/net10.0/pizzeria.dll
+/workspaces/pizzeria/bin/Debug/net10.0/pizzeria.pdb
+/workspaces/pizzeria/obj/Debug/net10.0/pizzeria.dll
+/workspaces/pizzeria/obj/Debug/net10.0/refint/pizzeria.dll
+/workspaces/pizzeria/obj/Debug/net10.0/pizzeria.pdb
+/workspaces/pizzeria/obj/Debug/net10.0/pizzeria.genruntimeconfig.cache
+/workspaces/pizzeria/obj/Debug/net10.0/ref/pizzeria.dll
