@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gran Animación</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      background: radial-gradient(circle at top, #0b1a3f 0%, #040814 45%, #000 100%);
+      overflow: hidden;
+      font-family: system-ui, sans-serif;
+      color: white;
+    }
+
+    .scene {
+      position: relative;
+      width: min(960px, 100vw);
+      aspect-ratio: 16 / 9;
+      border-radius: 32px;
+      overflow: hidden;
+      box-shadow: 0 0 80px rgba(0, 0, 0, 0.5);
+      background: linear-gradient(180deg, #112154 0%, #02040f 55%, #0d1a38 100%);
+    }
+
+    .stars {
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      background: radial-gradient(circle, rgba(255,255,255,0.9) 1px, transparent 1px) 20% 10% / 8px 8px no-repeat,
+                  radial-gradient(circle, rgba(255,255,255,0.7) 1px, transparent 1px) 80% 15% / 6px 6px no-repeat,
+                  radial-gradient(circle, rgba(255,255,255,0.8) 1px, transparent 1px) 40% 30% / 7px 7px no-repeat,
+                  radial-gradient(circle, rgba(255,255,255,0.6) 1px, transparent 1px) 70% 70% / 5px 5px no-repeat,
+                  radial-gradient(circle, rgba(255,255,255,0.7) 1px, transparent 1px) 15% 65% / 6px 6px no-repeat,
+                  radial-gradient(circle, rgba(255,255,255,0.8) 1px, transparent 1px) 55% 20% / 5px 5px no-repeat;
+      animation: starfield 20s linear infinite;
+    }
+
+    .moon {
+      position: absolute;
+      top: 12%;
+      left: 60%;
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      background: radial-gradient(circle at 30% 30%, #fff 0%, #f5f7ff 35%, #cdd4f0 100%);
+      box-shadow: 0 0 80px rgba(255,255,255,0.25);
+      animation: drift 12s ease-in-out infinite alternate;
+    }
+
+    .mountain {
+      position: absolute;
+      bottom: -10%;
+      left: -10%;
+      width: 120%;
+      height: 70%;
+      background: linear-gradient(180deg, transparent 0%, rgba(1, 23, 51, 0.45) 35%, #02040f 100%);
+      clip-path: polygon(0 75%, 10% 45%, 20% 55%, 30% 35%, 40% 60%, 50% 40%, 60% 55%, 70% 30%, 80% 50%, 90% 40%, 100% 70%, 100% 100%, 0 100%);
+      animation: pulse 8s ease-in-out infinite alternate;
+    }
+
+    .text {
+      position: absolute;
+      bottom: 12%;
+      left: 50%;
+      transform: translateX(-50%);
+      text-align: center;
+      font-size: clamp(2rem, 4vw, 4.5rem);
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      text-shadow: 0 0 40px rgba(77, 147, 255, 0.45),
+                   0 0 20px rgba(255, 255, 255, 0.25);
+    }
+
+    .text::after {
+      content: "Animación Épica";
+      display: block;
+      margin-top: 0.5rem;
+      font-size: 1rem;
+      color: #a8c4ff;
+      opacity: 0.8;
+      letter-spacing: 0.2em;
+    }
+
+    .glow-ring {
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(circle at 50% 20%, rgba(128, 175, 255, 0.18), transparent 20%),
+                  radial-gradient(circle at 20% 80%, rgba(113, 213, 255, 0.08), transparent 18%);
+      pointer-events: none;
+      opacity: 0.9;
+      animation: glow 10s ease-in-out infinite alternate;
+    }
+
+    @keyframes starfield {
+      from { background-position: 0 0, 0 0, 0 0, 0 0, 0 0, 0 0; }
+      to   { background-position: -2000px 0, -1500px 0, -1800px 0, -1200px 0, -1600px 0, -1400px 0; }
+    }
+
+    @keyframes drift {
+      from { transform: translate(-50%, 0) translateX(-20px); }
+      to   { transform: translate(-50%, 0) translateX(20px); }
+    }
+
+    @keyframes pulse {
+      from { transform: translateY(0) scale(1); }
+      to   { transform: translateY(-12px) scale(1.02); }
+    }
+
+    @keyframes glow {
+      from { opacity: 0.65; }
+      to { opacity: 1; }
+    }
+
+    @media (max-width: 640px) {
+      .scene { aspect-ratio: auto; height: 70vh; }
+      .moon { width: 120px; height: 120px; }
+      .text::after { font-size: 0.85rem; }
+    }
+  </style>
+</head>
+<body>
+  <div class="scene">
+    <div class="stars"></div>
+    <div class="moon"></div>
+    <div class="mountain"></div>
+    <div class="glow-ring"></div>
+    <div class="text"></div>
+  </div>
+</body>
+</html>
