@@ -285,7 +285,7 @@ partial class Program
                 total += subtotal;
 
                 Console.Write("¿Agregar otro producto? (s/n): ");
-                continuar = Convert.ToChar(Console.ReadLine());
+                continuar = Convert.ToChar(Console.ReadLine() ?? "n");
             }
 
             Console.WriteLine("\n======= FACTURA =======");
